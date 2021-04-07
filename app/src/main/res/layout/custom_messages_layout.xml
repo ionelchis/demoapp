@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/currentDateChanged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/receiverProfileImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/profile_image"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/currentDateChanged"/>
+    <TextView
+        android:id="@+id/receiverMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/receiverProfileImage"
+        android:text="Receiver Message"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@id/currentDateChanged"
+        />
+
+    <TextView
+        android:id="@+id/receiverMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:text="11:22 PM"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/receiverMessageText"
+        android:layout_toEndOf="@id/receiverProfileImage"
+        />
+
+
+    <ImageView
+        android:id="@+id/receiverImageMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:minWidth="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/receiverProfileImage"
+        android:layout_marginRight="40dp"
+        android:scaleType="fitStart"
+        android:layout_below="@id/currentDateChanged"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/senderProfileImage"
+        android:layout_alignParentEnd="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/profile_image"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/currentDateChanged"/>
+
+    <TextView
+        android:id="@+id/senderMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@id/receiverMessageText"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@id/senderProfileImage"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textSize="15sp"
+        android:layout_marginStart="40dp"
+        android:text="Sender Message"
+        android:textColor="@color/white"
+        android:layout_below="@id/currentDateChanged"
+        />
+
+    <TextView
+        android:id="@+id/senderMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="5dp"
+        android:text="11:22 PM"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/senderMessageText"
+        android:layout_toStartOf="@id/senderProfileImage"
+        />
+
+    <ImageView
+        android:id="@+id/senderImageMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:minWidth="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@id/senderProfileImage"
+        android:layout_marginStart="40dp"
+        android:scaleType="fitStart"
+        android:layout_below="@id/currentDateChanged"
+        />
+
+
+</RelativeLayout>

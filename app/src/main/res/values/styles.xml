@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark">
+
+    </style>
+
+    <style name="TabsTheme" parent="ThemeOverlay.AppCompat.Dark">
+
+    </style>
+
+    <style name="MenuTheme" parent="ThemeOverlay.AppCompat.Dark">
+
+    </style>
+
+    <style name="AlertDialog" parent="ThemeOverlay.AppCompat.Dark">
+
+    </style>
+
+
+</resources>
